@@ -1,3 +1,4 @@
+```bash
 // What system are we connected to?
 systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
 
@@ -68,7 +69,7 @@ accesschk.exe -ucqv [service_name]
 // Find all weak folder permissions per drive.
 accesschk.exe -uwdqs Users c:\
 accesschk.exe -uwdqs "Authenticated Users" c:\
-
+JAWS
 // Find all weak file permissions per drive.
 accesschk.exe -uwqs Users c:\*.*
 accesschk.exe -uwqs "Authenticated Users" c:\*.*
@@ -80,3 +81,4 @@ sc qc [service_name] (to verify!)
 net start [service_name]
 
 Mostly all of this taken from http://www.fuzzysecurity.com/tutorials/16.html
+```
